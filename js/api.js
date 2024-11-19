@@ -16,22 +16,22 @@ export const getHamburgerByID = async (id) =>{
 
 //crear una hamburguesa 
 
-export const addHamburger = async (hamburger) =>{
+export const addHamburger = async (Hamburger) =>{
     const response = await fetch (API_URL,{
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(hamburger)
+        body: JSON.stringify(Hamburger)
     });
     return response.json();
 };
 
 //actualizar una hamburguesa 
 
-export const updateHamburger = async (id,hamburger) =>{
+export const updateHamburger = async (id,Hamburger) =>{
     const response = await fetch (`${API_URL}/${id}`,{
         method: "PUT",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(hamburger)
+        body: JSON.stringify(Hamburger)
     });
     return response.json();
 };
