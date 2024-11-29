@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <img class="card-img-top" src="${Hamburger.imgUrl}">
         <div class="card-body d-flex flex-column justify-content-end">
           <h5 class="card-title">${Hamburger.name}</h5>
-          <p class="card-text">${new Intl.NumberFormat('en-ES', { style: 'currency', currency: 'USD' }).format(product.price)}</p>
+          <p class="card-text">${new Intl.NumberFormat('en-ES', { style: 'currency', currency: 'USD' }).format(Hamburger.price)}</p>
           <a onclick="viewProduct(${Hamburger.id})" class="btn btn-primary">Ver más</a>
         </div>
       </div>
